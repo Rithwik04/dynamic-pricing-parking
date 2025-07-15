@@ -3,35 +3,34 @@
 **Capstone Project – Summer Analytics 2025**  
 **Consulting & Analytics Club × Pathway**
 
+A real-time, data-driven dynamic pricing engine for urban parking lots based on demand, competition, and live conditions.
+
 ---
 
 ## 📌 Project Overview
 
-Urban parking spaces suffer from static pricing inefficiencies. This project builds a **dynamic, real-time pricing engine** for 14 urban parking lots using demand, competition, and real-time environmental features. The model adjusts prices intelligently using data-driven logic built from scratch using `NumPy`, `Pandas`, and `Pathway`.
+Urban parking lots often suffer inefficiencies due to static pricing. This project implements a dynamic pricing system to optimize utilization, using three models:  
+✅ Baseline Linear Model  
+✅ Demand-based Pricing Model  
+✅ Competitive Geo-Aware Pricing Model
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Programming Language**: Python
-- **Libraries Used**:
-  - Data Processing: `pandas`, `numpy`
-  - Visualization: `bokeh`
-  - Real-time Ingestion: `Pathway`
-- **Platform**: Google Colab
+- Python
+- Pandas & Numpy (data processing)
+- Pathway (real-time stream ingestion)
+- Bokeh (real-time visualizations)
+- Google Colab
 
 ---
 
-## 🧠 Architecture Diagram
+## 📊 Architecture Diagram
 
-See [`architecture_diagram.md`](architecture_diagram.md) for the flowchart.  
-Visual diagram built using Mermaid.
+See [`architecture_diagram.md`](architecture_diagram.md) for full flow.
 
-```mermaid
-flowchart TD
-    A[Data Source: dataset.csv] --> B[Pathway Stream Engine]
-    B --> C[Real-time Feature Engineering]
-    C --> D[Dynamic Pricing Models]
-    D --> E[Price Output Stream]
-    D --> F[Optional: Rerouting Suggestions]
-    E --> G[Visualization via Bokeh]
+---
+
+## 📁 Repository Structure
+
